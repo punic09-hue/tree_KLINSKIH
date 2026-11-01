@@ -82,34 +82,4 @@ def w(name,var,obj): open(D+name,'w').write('window.%s=%s;\n'%(var,json.dumps(ob
 w('persons.js','TREE_PERSONS',persons);w('families.js','TREE_FAMILIES',F);w('sources.js','TREE_SOURCES',S)
 w('places.js','TREE_PLACES',PL);w('research.js','TREE_RESEARCH',research);w('studies.js','TREE_STUDIES',ST)
 print(len(persons),len(F),len(S),len(PL),'hidden',hide, {k:rom(k) for k in ['1','2','9','87','93']})
-cfg=dict(title='Род КЛИНСКИХ',subtitle='Коломна — Екатеринбург (Верх-Исетский завод)',contact=dict(name='Михаил',email=''),
- short='Клинских',pageTitle='Родословие Клинских',kicker='Родословие · Коломна · Екатеринбург',heading='Род Клинских',heroArt='kolomna',
- levels=dict(viz='Коломна / ВИЗ',ekb='Екатеринбург',ru='Россия',world='Мир'),mapCenter=[56.84,60.6],mapZoom=5,
- updated=d['updated'],cutoff=1979,rootNum='1',focusNum='9')
-open(D+'config.js','w').write('/* Настройки сайта рода Клинских. */\nwindow.TREE_CONFIG='+json.dumps(cfg,ensure_ascii=False,indent=1)+';\n')
-M=r"""(function(){const w=t=>'https://ru.wikipedia.org/w/index.php?search='+encodeURIComponent(t);
-window.TREE_MILESTONES=[
-{who:'Афонасий Клинских',ids:['1'],years:'≈1780-е',intro:'Родоначальник, мещанин города Коломны. Документ о нём самом ищется в 7-й ревизии 1816 г. (ЦГАМ ф.51 оп.8 д.118).',
- ev:[{y:'1812',l:'ru',t:'Отечественная война',u:w('Отечественная война 1812 года')},{y:'1816',l:'viz',t:'7-я ревизия мещан Коломны'}]},
-{who:'Матвей Афонасьевич и Авдотья Семеновна',ids:['2','3'],years:'1806 — 1855',intro:'Мещане Коломны. Сыновья Иван, Павел, Григорий, Георгий (Егор), дочь Софья.',
- ev:[{y:'1850',l:'viz',t:'Ревизия 1850 г., семья в Коломне'},{y:'1855',l:'viz',t:'Смерть Матвея Афонасьевича'},{y:'1858',l:'viz',t:'10-я ревизия: семья среди мещан Коломны'},{y:'1861',l:'ru',t:'Отмена крепостного права',u:w('Крестьянская реформа 1861 года')}]},
-{who:'Георгий (Егор) Матвеевич и Екатерина Никифоровна',ids:['9','14'],years:'1844 — после 1896',intro:'Переселились из Коломны в Екатеринбург; десять детей крещены в Успенской церкви Верх-Исетского завода.',
- ev:[{y:'1871',l:'ekb',t:'Рождение дочери Елены, ВИЗ'},{y:'1883',l:'ekb',t:'Рождение сына Серапиона'},{y:'1896',l:'ekb',t:'Рождение дочери Натальи'}]},
-{who:'Серапион Георгиевич',ids:['87'],years:'1883 — 1952',intro:'Младший унтер-офицер; от него идёт следующая ветвь рода.',
- ev:[{y:'1914',l:'world',t:'Первая мировая война',u:w('Первая мировая война')},{y:'1941',l:'ru',t:'Великая Отечественная война',u:w('Великая Отечественная война')}]}];})();
-"""
-open(D+'milestones.js','w').write(M)
-h=open(out+'/assets/hero-art.js').read()
-art=""" kolomna: { name:'Коломенский кремль и Ока', svg:`
-  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
-   <g stroke-opacity=".75" stroke-width="2.2">
-    <path d="M60 200 V120 L80 96 L100 120 V200"/><path d="M100 160 H300"/><path d="M100 160 V150 h10 v10 h10 v-10 h10 v10 h10 v-10 h10 v10 h10 v-10 h10 v10 h10 v-10 h10 v10 h10 v-10 h10 v10 h10 v-10 h10 v10 h10 v-10 h10 v10 h10 v-10 h10 v10 h10 v-10 h10 v10"/>
-    <path d="M300 200 V100 L325 70 L350 100 V200"/><path d="M350 165 H470 V200"/>
-    <path d="M490 200 V130 H540 V200 M500 130 C500 100 530 100 530 130 M515 98 V80 M508 86 H522"/>
-   </g>
-   <path d="M60 200 H600" stroke-opacity=".8" stroke-width="2.4"/>
-   <g stroke-opacity=".5" stroke-width="1.8"><path d="M0 222 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/><path d="M10 244 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" stroke-opacity=".3"/></g>
-  </g>`},
-"""
-h=h.replace('window.HERO_ART = {\n','window.HERO_ART = {\n'+art,1)
-open(out+'/assets/hero-art.js','w').write(h)
+# config.js, milestones.js и hero-art.js ведутся вручную в папке сайта и здесь не перезаписываются
