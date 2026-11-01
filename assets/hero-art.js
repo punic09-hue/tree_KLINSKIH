@@ -1,58 +1,67 @@
 /* 5 вариантов картинки для обложки. Линейная графика белым цветом с прозрачностью —
    одинаково читается на синем фоне светлой темы и тёмно-синем фоне тёмной. Все рисунки — оригинальные. */
 window.HERO_ART = {
- kolomna: { name:'Коломенский кремль над Окой', svg:`
+ rows: { name:'Торговые ряды', svg:`
   <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
- <g stroke-opacity=".8" stroke-width="2.2">
-  <path d="M40 196 V118 L62 88 L84 118 V196"/><path d="M52 118 V104 M72 118 V104"/>
-  <path d="M84 150 V140 h12 v10 h12 v-10 h12 v10 h12 v-10 h12 v10 h12 v-10 h12 v10 h12 v-10 h12 v10 h12 v-10 h12 v10 h12 v-10 h12 v10 h12 v-10 h12 v10 V196"/>
-  <path d="M276 196 V96 L304 58 L332 96 V196"/><path d="M286 96 V82 H322 V96 M296 196 V170 a8 8 0 0 1 16 0 V196"/>
-  <path d="M332 156 H440 V196"/>
-  <path d="M460 196 V134 H520 V196 M468 134 C468 104 512 104 512 134 M490 102 V78 M482 86 H498"/>
-  <path d="M530 196 V150 H566 V196 M536 150 C536 130 560 130 560 150 M548 128 V114"/>
- </g>
- <path d="M20 196 H600" stroke-opacity=".85" stroke-width="2.4"/><path d="M0 218 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 " stroke-opacity="0.5" stroke-width="1.8"/><path d="M0 240 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 " stroke-opacity="0.3" stroke-width="1.8"/>
- <path d="M120 60 c10 -8 20 -8 30 0 M150 60 c10 -8 20 -8 30 0" stroke-opacity=".4" stroke-width="1.6"/></g>`},
- road: { name:'Путь: от Оки к Уральским горам', svg:`
-  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
- <path d="M0 170 L70 120 L120 150 L190 80 L250 140 L320 100 L380 150" stroke-opacity=".35" stroke-width="2"/>
- <path d="M360 200 L430 110 L470 140 L530 70 L600 130" stroke-opacity=".8" stroke-width="2.4"/>
- <path d="M430 110 l-12 18 M530 70 l-16 24 l10 -4" stroke-opacity=".5" stroke-width="1.8"/>
- <path d="M0 250 C120 240 180 210 260 205 S420 200 470 190" stroke-opacity=".8" stroke-width="2.2" stroke-dasharray="2 10"/>
- <circle cx="40" cy="246" r="5" stroke-opacity=".9" stroke-width="2"/><circle cx="470" cy="190" r="5" stroke-opacity=".9" stroke-width="2"/>
- <path d="M30 230 V214 l10 -10 l10 10 V230" stroke-opacity=".6" stroke-width="1.8"/>
- <path d="M462 176 V160 l8 -8 l8 8 V176" stroke-opacity=".6" stroke-width="1.8"/>
- <path d="M80 40 a14 14 0 1 0 0.1 0" stroke-opacity=".35" stroke-width="1.8"/></g>`},
- church: { name:'Успенская церковь Верх-Исетского завода', svg:`
-  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
- <g stroke-opacity=".8" stroke-width="2.2">
-  <path d="M220 200 V120 H380 V200"/><path d="M220 120 L300 96 L380 120"/>
-  <path d="M260 120 V96 C260 66 340 66 340 96 V120" /><path d="M300 70 V40 M290 50 H310"/>
-  <path d="M400 200 V100 H440 V200 M400 100 L420 70 L440 100 M420 70 V40 M412 48 H428"/>
-  <path d="M380 150 H400"/><path d="M160 200 V150 H220 M160 150 C160 130 200 130 200 150"/>
-  <path d="M248 200 V160 a10 10 0 0 1 20 0 V200 M330 200 V160 a10 10 0 0 1 20 0 V200 M290 200 V166 a10 10 0 0 1 20 0 V200"/>
- </g>
- <path d="M60 200 H560" stroke-opacity=".85" stroke-width="2.4"/><path d="M0 222 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 " stroke-opacity="0.45" stroke-width="1.8"/><path d="M0 244 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 " stroke-opacity="0.28" stroke-width="1.8"/>
- <path d="M60 200 l-30 -20 M80 200 v-30 l-10 10 M80 170 l10 10" stroke-opacity=".35" stroke-width="1.6"/></g>`},
- train: { name:'Уральская горнозаводская дорога, 1878', svg:`
-  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
- <path d="M0 210 H600 M0 222 H600" stroke-opacity=".7" stroke-width="2"/>
- <path d="M10 222 v8 M50 222 v8 M90 222 v8 M130 222 v8 M170 222 v8 M210 222 v8 M250 222 v8 M290 222 v8 M330 222 v8 M370 222 v8 M410 222 v8 M450 222 v8 M490 222 v8 M530 222 v8 M570 222 v8" stroke-opacity=".35" stroke-width="1.6"/>
  <g stroke-opacity=".85" stroke-width="2.2">
-  <path d="M330 196 V140 H380 V110 H420 V140 H460 L480 170 V196 Z"/><path d="M350 140 V118 h-8 v-12 h24 v12 h-8"/>
-  <path d="M392 120 H410 V136 H392Z"/><circle cx="350" cy="200" r="10"/><circle cx="395" cy="200" r="14"/><circle cx="440" cy="200" r="14"/>
-  <path d="M200 196 V150 H310 V196 M210 150 V138 H300 V150"/><circle cx="225" cy="202" r="8"/><circle cx="285" cy="202" r="8"/><path d="M310 186 H330"/>
-  <path d="M70 196 V150 H180 V196 M80 150 V138 H170 V150"/><circle cx="95" cy="202" r="8"/><circle cx="155" cy="202" r="8"/><path d="M180 186 H200"/>
+  <path d="M120 200 V110 H560 V200"/><path d="M110 110 H570 M116 100 H564 V110"/>
+  <path d="M126 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M166 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M206 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M246 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M286 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M326 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M366 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M406 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M446 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M486 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 M526 200 V144.0 a14.0 14.0 0 0 1 28 0 V200 "/>
+  <path d="M310 100 V70 H370 V100 M300 70 L340 46 L380 70"/><circle cx="340" cy="84" r="8"/>
  </g>
- <path d="M354 100 c-10 -18 14 -24 4 -42 c-8 -14 14 -20 8 -36 M366 100 c14 -10 30 -6 40 -20" stroke-opacity=".45" stroke-width="2"/>
- <path d="M0 120 L60 80 L110 110 L170 60 L230 110" stroke-opacity=".25" stroke-width="2"/></g>`},
- tree: { name:'Родословное древо', svg:`
+ <g stroke-opacity=".45" stroke-width="1.8"><path d="M140 200 v-14 h12 v14 M226 200 l6 -16 l6 16 M386 194 h20 v6 h-20z M470 200 v-12 a6 6 0 0 1 12 0 v12"/></g>
+ <path d="M60 200 H600" stroke-opacity=".85" stroke-width="2.4"/><path d="M60 214 H600" stroke-opacity=".3" stroke-width="1.6" stroke-dasharray="10 8"/></g>`},
+ shop: { name:'Мещанская лавка', svg:`
   <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
- <path d="M300 250 V120" stroke-opacity=".85" stroke-width="3"/>
- <g stroke-opacity=".75" stroke-width="2.2"><path d="M300 170 C260 150 220 140 180 110 M300 150 C340 130 380 120 420 90 M300 130 C280 100 260 80 230 60 M300 125 C320 95 345 75 370 55 M180 110 C160 90 150 80 130 76 M420 90 C440 76 460 70 480 70"/></g>
- <g stroke-opacity=".6" stroke-width="2"><circle cx="300" cy="104" r="12"/><circle cx="180" cy="110" r="9"/><circle cx="420" cy="90" r="9"/><circle cx="230" cy="60" r="8"/><circle cx="370" cy="55" r="8"/><circle cx="130" cy="76" r="7"/><circle cx="480" cy="70" r="7"/></g>
- <g stroke-opacity=".4" stroke-width="1.8"><path d="M300 250 C270 255 240 262 210 262 M300 250 C330 256 360 262 392 262 M300 250 C290 258 280 266 266 272 M300 250 C312 260 326 268 340 272"/></g>
- <path d="M100 250 H500" stroke-opacity=".5" stroke-width="2"/></g>`},
+ <g stroke-opacity=".85" stroke-width="2.2">
+  <path d="M220 200 V100 L320 60 L420 100 V200"/><path d="M210 104 L320 56 L430 104"/>
+  <path d="M244 120 H396 V146 H244Z"/>
+  <path d="M244 200 V160 H300 V200 M340 200 V160 H396 V200 M300 160 H340"/>
+  <path d="M310 200 V172 H330 V200"/>
+  <path d="M300 84 h40 v16 h-40z"/>
+ </g>
+ <text x="320" y="139" fill="#fff" fill-opacity=".85" stroke="none" font-family="Georgia,serif" font-size="15" text-anchor="middle" letter-spacing="2">ТОРГОВЛЯ</text>
+ <g stroke-opacity=".6" stroke-width="1.8">
+  <path d="M460 200 v-26 h30 v26 M456 174 h38 M466 174 v-8 h18 v8 M475 166 v-6 M490 186 h10 v6"/>
+  <path d="M520 200 l8 -26 h26 l8 26z M528 174 h26"/>
+  <path d="M150 200 v-30 c0 -10 30 -10 30 0 v30 M150 180 h30"/>
+ </g>
+ <path d="M80 200 H600" stroke-opacity=".85" stroke-width="2.4"/></g>`},
+ scales: { name:'Весы и гири', svg:`
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+ <g stroke-opacity=".85" stroke-width="2.2">
+  <path d="M370 210 V70 M340 210 H400 M352 210 l18 -14 l18 14"/><circle cx="370" cy="64" r="6"/>
+  <path d="M270 90 L470 50"/>
+  <path d="M270 90 l-30 60 M270 90 l30 60 M234 150 h72 c-4 18 -68 18 -72 0z"/>
+  <path d="M470 50 l-30 60 M470 50 l30 60 M434 110 h72 c-4 18 -68 18 -72 0z"/>
+ </g>
+ <g stroke-opacity=".6" stroke-width="2"><path d="M252 150 l6 -18 h24 l6 18 M264 132 v-6 h12 v6"/><path d="M450 110 c-4 -20 4 -26 20 -26 s24 6 20 26"/><path d="M462 88 l8 -8 l8 8"/></g>
+ <g stroke-opacity=".55" stroke-width="1.8"><path d="M520 210 l6 -22 h24 l6 22z M532 188 v-6 h12 v6"/><path d="M570 210 l4 -14 h16 l4 14z M578 196 v-4 h8 v4"/><path d="M150 210 c-10 -40 50 -40 40 0z M160 186 c6 -8 14 -8 20 0"/></g>
+ <path d="M100 210 H600" stroke-opacity=".7" stroke-width="2.4"/></g>`},
+ house: { name:'Мещанский дом на торговой улице', svg:`
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+ <g stroke-opacity=".85" stroke-width="2.2">
+  <path d="M180 200 V110 H380 V200"/><path d="M168 112 L280 60 L392 112"/>
+  <path d="M260 92 h40 v18 h-40z M280 92 v18"/>
+  <path d="M200 130 h36 v40 h-36z M262 130 h36 v40 h-36z M324 130 h36 v40 h-36z"/>
+  <path d="M196 130 l22 -12 l22 12 M258 130 l22 -12 l22 12 M320 130 l22 -12 l22 12"/>
+  <path d="M196 174 h44 M258 174 h44 M320 174 h44"/>
+  <path d="M400 200 V130 H470 V200 M394 132 L435 108 L476 132 M420 200 V160 H450 V200"/>
+  <path d="M400 150 H470"/>
+ </g>
+ <text x="435" y="146" fill="#fff" fill-opacity=".8" stroke="none" font-family="Georgia,serif" font-size="11" text-anchor="middle">ЛАВКА</text>
+ <g stroke-opacity=".5" stroke-width="1.8"><path d="M490 200 V120 M482 122 h16 M490 122 c4 -6 10 -6 14 0"/><path d="M110 200 V150 M98 200 l12 -40 l12 40 M100 176 h20"/></g>
+ <path d="M60 200 H600" stroke-opacity=".85" stroke-width="2.4"/><path d="M60 214 H600 M60 228 H600" stroke-opacity=".25" stroke-width="1.6" stroke-dasharray="14 10"/></g>`},
+ pier: { name:'Хлебная пристань на Оке', svg:`
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+ <g stroke-opacity=".85" stroke-width="2.2">
+  <path d="M60 186 H300 M80 186 V210 M140 186 V210 M200 186 V210 M260 186 V210"/>
+  <path d="M100 186 V150 H200 V186 M94 152 L150 126 L206 152"/>
+  <path d="M220 186 c-8 -22 28 -22 20 0 M246 186 c-8 -22 28 -22 20 0 M232 170 c-8 -22 28 -22 20 0"/>
+  <path d="M330 196 L350 220 H540 L560 196 Z"/><path d="M445 196 V90 M445 96 L520 186 H445"/>
+  <path d="M370 196 c-8 -20 26 -20 18 0 M396 196 c-8 -20 26 -20 18 0 M383 182 c-8 -20 26 -20 18 0"/>
+  <path d="M480 196 v-14 h26 v14 M486 182 v-8 h14 v8"/>
+ </g><path d="M0 230 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 " stroke-opacity="0.5" stroke-width="1.8"/><path d="M0 252 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 " stroke-opacity="0.3" stroke-width="1.8"/>
+ <path d="M80 70 c10 -8 20 -8 30 0 M110 70 c10 -8 20 -8 30 0" stroke-opacity=".4" stroke-width="1.6"/></g>`},
  dam: { name:'Плотина и пруд ВИЗа', svg:`
   <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
    <path d="M0 150 C60 120 110 135 160 118 S260 100 320 122 S430 104 520 120 S600 112 600 112" stroke-opacity=".25" stroke-width="2"/>

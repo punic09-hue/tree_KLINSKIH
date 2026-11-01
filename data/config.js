@@ -10,7 +10,7 @@ window.TREE_CONFIG={
  "pageTitle": "Родословие Клинских",
  "kicker": "Родословие · Коломна · Екатеринбург",
  "heading": "Род Клинских",
- "heroArt": "kolomna",
+ "heroArt": "rows",
  "levels": {
   "viz": "ВИЗ и Коломна",
   "ekb": "Екатеринбург",
