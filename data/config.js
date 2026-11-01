@@ -4,7 +4,7 @@ window.TREE_CONFIG={
  "subtitle": "Коломна — Екатеринбург (Верх-Исетский завод)",
  "contact": {
   "name": "Михаил",
-  "email": ""
+  "email": "pun@mail.ru"
  },
  "short": "Клинских",
  "pageTitle": "Родословие Клинских",
@@ -12,7 +12,7 @@ window.TREE_CONFIG={
  "heading": "Род Клинских",
  "heroArt": "kolomna",
  "levels": {
-  "viz": "Коломна / ВИЗ",
+  "viz": "ВИЗ и Коломна",
   "ekb": "Екатеринбург",
   "ru": "Россия",
   "world": "Мир"
@@ -22,7 +22,7 @@ window.TREE_CONFIG={
   60.6
  ],
  "mapZoom": 5,
- "updated": "2026-09-24",
+ "updated": "01.11.2026",
  "cutoff": 1979,
  "rootNum": "1",
  "focusNum": "9"
