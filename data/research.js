@@ -158,7 +158,7 @@ window.TREE_RESEARCH={
  "14": {
   "pri": true,
   "branch": "Коломна",
-  "gen": "IV",
+  "gen": "III",
   "parish": "",
   "burial": "",
   "estate": "",
@@ -938,7 +938,7 @@ window.TREE_RESEARCH={
  "80": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанская дочь",
@@ -950,7 +950,7 @@ window.TREE_RESEARCH={
  "81": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанская дочь",
@@ -962,7 +962,7 @@ window.TREE_RESEARCH={
  "82": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанская дочь; вдова Денисова",
@@ -974,7 +974,7 @@ window.TREE_RESEARCH={
  "83": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "крестьянин",
@@ -986,7 +986,7 @@ window.TREE_RESEARCH={
  "84": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанин",
@@ -998,7 +998,7 @@ window.TREE_RESEARCH={
  "85": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанская дочь",
@@ -1010,7 +1010,7 @@ window.TREE_RESEARCH={
  "86": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанский сын",
@@ -1022,7 +1022,7 @@ window.TREE_RESEARCH={
  "87": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мл. унтер-офицер",
@@ -1034,7 +1034,7 @@ window.TREE_RESEARCH={
  "88": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "",
@@ -1046,7 +1046,7 @@ window.TREE_RESEARCH={
  "89": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанский сын",
@@ -1058,7 +1058,7 @@ window.TREE_RESEARCH={
  "90": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанская дочь",
@@ -1070,7 +1070,7 @@ window.TREE_RESEARCH={
  "91": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанская дочь",
@@ -1082,7 +1082,7 @@ window.TREE_RESEARCH={
  "92": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "V",
+  "gen": "IV",
   "parish": "",
   "burial": "",
   "estate": "мещанская дочь",
@@ -1094,7 +1094,7 @@ window.TREE_RESEARCH={
  "93": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "VI",
+  "gen": "V",
   "parish": "",
   "burial": "",
   "estate": "",
@@ -1106,7 +1106,7 @@ window.TREE_RESEARCH={
  "94": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "VI",
+  "gen": "V",
   "parish": "",
   "burial": "",
   "estate": "",
@@ -1118,7 +1118,7 @@ window.TREE_RESEARCH={
  "95": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "VI",
+  "gen": "V",
   "parish": "",
   "burial": "",
   "estate": "",
@@ -1130,7 +1130,7 @@ window.TREE_RESEARCH={
  "96": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "VI",
+  "gen": "V",
   "parish": "",
   "burial": "",
   "estate": "ст. сержант",
@@ -1142,7 +1142,7 @@ window.TREE_RESEARCH={
  "97": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "VI",
+  "gen": "V",
   "parish": "",
   "burial": "",
   "estate": "",
@@ -1154,7 +1154,7 @@ window.TREE_RESEARCH={
  "98": {
   "pri": true,
   "branch": "Екатеринбург (ветвь Георгия Матвеевича)",
-  "gen": "VI",
+  "gen": "V",
   "parish": "",
   "burial": "",
   "estate": "",
@@ -1970,7 +1970,7 @@ window.TREE_RESEARCH={
  "201": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "I",
+  "gen": "",
   "parish": "",
   "burial": "",
   "estate": "мастеровой ВИЗа",
@@ -1982,7 +1982,7 @@ window.TREE_RESEARCH={
  "202": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "II",
+  "gen": "I",
   "parish": "",
   "burial": "",
   "estate": "мастеровой, с 1824 государственный мастеровой ВИЗа",
@@ -1994,7 +1994,7 @@ window.TREE_RESEARCH={
  "203": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "II",
+  "gen": "I",
   "parish": "",
   "burial": "",
   "estate": "дочь мастерового Андрея Пошлякова",
@@ -2006,7 +2006,7 @@ window.TREE_RESEARCH={
  "204": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "III",
+  "gen": "II",
   "parish": "",
   "burial": "",
   "estate": "государственный мастеровой ВИЗа",
@@ -2018,7 +2018,7 @@ window.TREE_RESEARCH={
  "205": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "IV",
+  "gen": "III",
   "parish": "",
   "burial": "",
   "estate": "крестьянин Верх-Исетского завода",
@@ -2030,7 +2030,7 @@ window.TREE_RESEARCH={
  "206": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "III",
+  "gen": "II",
   "parish": "",
   "burial": "",
   "estate": "дочь государственного мастерового",
@@ -2042,7 +2042,7 @@ window.TREE_RESEARCH={
  "207": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "III",
+  "gen": "II",
   "parish": "",
   "burial": "",
   "estate": "мастеровой ВИЗа (сын мастерового)",
@@ -2054,7 +2054,7 @@ window.TREE_RESEARCH={
  "208": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "III",
+  "gen": "II",
   "parish": "",
   "burial": "",
   "estate": "мастеровой ВИЗа (сын мастерового)",
@@ -2066,7 +2066,7 @@ window.TREE_RESEARCH={
  "209": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "III",
+  "gen": "II",
   "parish": "",
   "burial": "",
   "estate": "мастеровой ВИЗа (сын мастерового)",
@@ -2078,7 +2078,7 @@ window.TREE_RESEARCH={
  "210": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "III",
+  "gen": "II",
   "parish": "",
   "burial": "",
   "estate": "мастеровой ВИЗа (сын мастерового)",
@@ -2090,7 +2090,7 @@ window.TREE_RESEARCH={
  "211": {
   "pri": false,
   "branch": "Верх-Исетский завод (Забелины — гипотеза, семья жены Георгия)",
-  "gen": "III",
+  "gen": "II",
   "parish": "",
   "burial": "",
   "estate": "мастеровой ВИЗа (сын мастерового)",

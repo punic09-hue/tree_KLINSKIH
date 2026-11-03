@@ -18,11 +18,35 @@ def g(i,seen=()):
     if i in gen: return gen[i]
     par=[x for x in ids(P[i]['ID_отца'])+ids(P[i]['ID_матери']) if x not in seen]
     sp=[x for x in ids(P[i]['ID_супруга(ов)']) if haspar(x) and x not in seen]
-    if par: v=max(g(x,seen+(i,)) for x in par)+1
+    fa=[x for x in ids(P[i]['ID_отца']) if x not in seen]
+    if fa: v=g(fa[0],seen+(i,))+1   # поколение — по отцовской линии
+    elif par: v=max(g(x,seen+(i,)) for x in par)+1
     elif sp: v=g(sp[0],seen+(i,))
     else: v=0
     gen[i]=v;return v
 for i in P: g(i)
+# жена со своими (в т.ч. гипотетическими) предками: выровнять её род по поколению мужа
+kids_of=lambda x:[k for k in P if x in ids(P[k]['ID_отца'])+ids(P[k]['ID_матери'])]
+for i in P:
+    if P[i]['Пол']!='Ж' or not haspar(i): continue
+    sp=[x for x in ids(P[i]['ID_супруга(ов)']) if x in gen and haspar(x)]
+    if not sp or gen[sp[0]]==gen[i]: continue
+    dg=gen[sp[0]]-gen[i]; AN=set(); st=[i]
+    while st:
+        c=st.pop()
+        for x in ids(P[c]['ID_отца'])+ids(P[c]['ID_матери']):
+            if x not in AN: AN.add(x); st.append(x)
+    own=set(); st=[i]
+    while st:
+        c=st.pop()
+        for k in kids_of(c):
+            if k not in own: own.add(k); st.append(k)
+    grp=set(AN)|{i}; st=list(AN)
+    while st:
+        c=st.pop()
+        for k in kids_of(c):
+            if k not in grp and k not in own and k!=i: grp.add(k); st.append(k)
+    for x in grp: gen[x]+=dg
 # shift: Афонасий = I
 base=gen.get('1') or 0
 R=['I','II','III','IV','V','VI','VII','VIII','IX','X']
