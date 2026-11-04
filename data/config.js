@@ -22,7 +22,7 @@ window.TREE_CONFIG={
   60.6
  ],
  "mapZoom": 5,
- "updated": "01.11.2026",
+ "updated": "04.11.2026",
  "cutoff": 1979,
  "rootNum": "1",
  "focusNum": "9"

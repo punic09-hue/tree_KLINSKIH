@@ -27,6 +27,14 @@ const node=p=>p?`<span class="tree-node ${p.sex==='Ж'?'f':'m'} ${p.pri?'pri':''
 const couple=p=>`<div class="couple">${node(p)}${(p.spouses||[]).map(id=>P[id]).filter(Boolean).map(s=>'<span class="ring">⚭</span>'+node(s)).join('')}</div>`;
 function desc(id,seen){const p=P[id];if(!p||seen.has(id))return'';seen.add(id);
   const k=kidsOf(id).filter(x=>x.father===id||!P[x.father]);
+  const hk=p.hiddenKids?`<ul><li><div class="couple"><span class="tree-node hidden-kids">🔒 потомки скрыты<br><small>родились после ${C.cutoff}</small></span></div></li></ul>`:'';
+  const sp=(p.spouses||[]).map(x=>P[x]).filter(Boolean);
+  if(sp.length>1){ /* несколько браков: дети висят под своей матерью (отцом), неизвестные — отдельно */
+    const other=x=>x.father===id?x.mother:x.father;
+    const br=sp.map(s=>[`<div class="couple marr"><span class="ring">⚭</span>${node(s)}</div>`,k.filter(x=>other(x)===s.id)]);
+    const un=k.filter(x=>!sp.some(s=>s.id===other(x)));
+    if(un.length)br.push([`<div class="couple marr"><span class="tree-node unknown-parent">${p.sex==='Ж'?'отец':'мать'} не установлен${p.sex==='Ж'?'':'а'}</span></div>`,un]);
+    return `<li><div class="couple">${node(p)}</div><ul>${br.map(([h,kk])=>`<li>${h}${kk.length?'<ul>'+kk.map(x=>desc(x.id,seen)).join('')+'</ul>':''}</li>`).join('')}</ul>${hk}</li>`;}
   return `<li>${couple(p)}${k.length?'<ul>'+k.map(x=>desc(x.id,seen)).join('')+'</ul>':''}${p.hiddenKids?`<ul><li><div class="couple"><span class="tree-node hidden-kids">🔒 потомки скрыты<br><small>родились после ${C.cutoff}</small></span></div></li></ul>`:''}</li>`;}
 function anc(id,d){const p=P[id];if(!p)return'';const par=[P[p.father],P[p.mother]].filter(Boolean);
   return `<li>${node(p)}${d&&par.length?'<ul>'+par.map(x=>anc(x.id,d-1)).join('')+'</ul>':''}</li>`;}
